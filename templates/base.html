@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>WLU PHI Society</Title>
+    <link rel="icon" href="static/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <div id = "header">
+        <a class = "header-image" href="/"><img src="../static/logo.png" height="100"></a>
+
+        <ul id = "header-items">
+            <a href="/"><li class = "header-item">Home</li></a>
+            <a href="/about"><li class = "header-item">About Us</li></a>
+            <li class = "header-item">Event</li>
+            <li class = "header-item">About Us</li>
+        </ul>
+    </div>
+    <div id = "content">{% block content %}{% endblock %}</div>
+</body>
